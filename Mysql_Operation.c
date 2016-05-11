@@ -4,12 +4,12 @@
 #define	HOST		"localhost"
 #define	USERNAME	"root"
 #define	PASSWORD	"lyh12063259"
-#define	DATABASE	"test"
+#define	DATABASE	"communicate"
 void query_sql(char* query);
 void main()
 {
 	char* query;
-	query="select * from first_table";
+	query="select count(*) from t_user";
 	query_sql(query);
 }
 void query_sql(char* query)
